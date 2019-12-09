@@ -22,20 +22,6 @@
               placeholder="结束时间"
               :picker-options="pickerOptions2"
             ></el-date-picker>
-            <!-- <el-popover
-              style="margin-left:8px;"
-              placement="top-start"
-              width="50"
-              trigger="hover"
-              content="请点击选择需要的状态"
-            >
-              <el-button
-                type="primary"
-                slot="reference"
-                icon="el-icon-s-flag"
-                @click="dialogVisible = true"
-              >状态{{stateValue?'-':''}}{{stateValue}}</el-button>
-            </el-popover> -->
             <el-select v-model="stateValue" placeholder="请选择状态" style="margin-left:8px;width:120px">
               <el-option
                 v-for="item in options"
@@ -56,6 +42,7 @@
             <el-button-group>
               <el-button type="primary" icon="el-icon-paperclip" @click="exportBtn()">导出</el-button>
               <el-button type="primary" icon="el-icon-printer" @click="printingBtn()">打印</el-button>
+              <el-button type="primary" icon="el-icon-printer" @click="printingBtn()">1234567测试</el-button>
             </el-button-group>
           </el-col>
         </el-row>
